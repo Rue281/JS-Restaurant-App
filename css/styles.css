@@ -1,0 +1,240 @@
+:root{
+--main-color: #009ad8;
+--text-color: #fff;
+--background-color: #0D0D0D;
+--secondary-color: #f9f6f6ca ;
+--footer-background-color: #262936;
+}
+
+body{
+    background: var(--background-color);
+}
+
+.progress-bar{
+    background: var(--background-color);
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.progress-bar i{
+    color: var(--text-color);
+}
+.progress-bar-mini{
+    position: absolute;
+    z-index: 9;
+    background: var(--background-color);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.side-nav{
+    background: var(--footer-background-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 320px; /*temporaryyyyy*/
+    text-align: left;
+    /* padding: 1em; */
+    row-gap: 1em;
+    color: var(--text-color);
+    z-index: 9;
+
+}
+/* .nav-tabs{
+    width: 0;
+} */
+.nav-tabs .list-unstyled li{
+    padding-top: 1em;
+    cursor: pointer;
+    top: 300px;
+    position: relative;
+}
+.nav-header{
+    background: var(--text-color);
+    color: var(--background-color);
+}
+.logo{
+    width: 3em;
+}
+
+.top, .icons, .nav-header .fa-solid.fa-xmark{
+    cursor: pointer;
+}
+
+.item-overlay {
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    background: var(--secondary-color);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.col-md-3.col-sm-12:hover .item-overlay{
+    top: 0;
+}
+.details{
+    color: var(--text-color);
+}
+.recipes > span{
+
+    padding: 0 0.5em;
+}
+.search .col-md-6 input, .areas, .ingredients{
+    color: var(--text-color);
+}
+.areas .col-md-3, .ingredients .col-md-3{
+    cursor: pointer;
+}
+
+/*form*/
+.alert-name, .alert-email, .alert-password{
+    display: none;
+}
+.incorrect-input,.not-found-msg{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    background-color: var(--background-color);
+}
+
+
+.banner img{
+    max-height: 37vh;
+    object-fit: cover;
+}
+
+nav .container-fluid{
+    background-color: var(--secondary-color);
+}
+
+.navbar-brand img{
+    max-height: 35px;
+}
+
+a.nav-link ,a.nav-link.active, .navbar-brand{
+    color: var(--text-color) !important;
+
+    
+}
+
+a.nav-link{
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+}
+
+a.nav-link:hover, a.nav-link.active{
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+}
+
+#home, .main{
+    background-image:  linear-gradient(45deg, #939eac, transparent);
+    background-size: cover;
+}
+input.form-control, .myNav, textarea.form-control{
+    background: var(--background-color);
+    border: 0;
+    color: #fff !important;
+}
+.form-control:focus, textarea:focus {
+    background-color: var(--background-color);
+    box-shadow: 0 0;
+} */
+
+/*to avoid "-internal-autofill-selected" style to be applied*/
+/*
+input:-webkit-autofill, input:-webkit-autofill:focus,
+textarea:-webkit-autofill, textarea:-webkit-autofill:focus  {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+button[type=submit]{
+    background: var(--main-color);
+}
+button[type=submit]:hover{
+    background: var(--main-color);
+}
+.locationForm > button{
+    right: 1%;
+    top: 13%;
+}
+
+.card{
+    background-size: cover;
+    color: #fff;
+}
+
+.loading{
+    position: fixed;
+   z-index: 9999;
+   inset: 0;
+   background-color: #272b30e3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.loader{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: relative;
+}
+
+.loader::after{
+    content: "";
+   box-sizing: border-box;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border-left: 4px solid #ff3d00;
+   border-bottom: 4px solid transparent;
+   animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+       transform: rotate(0deg);
+    }
+    100% {
+       transform: rotate(360deg);
+    }
+ } */
